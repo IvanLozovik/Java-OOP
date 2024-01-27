@@ -3,7 +3,6 @@ package OOP.sem1;
 import OOP.sem1.Heroes.*;
 import OOP.sem1.TypeOfHeroes.Hero;
 import OOP.sem1.TypeOfHeroes.Peasant;
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -16,12 +15,7 @@ public class Main {
         twoCommands.addAll(heroesBlack);
         twoCommands.addAll(heroesWhite);
         twoCommands.sort(((o1, o2) -> o2.getInitiative()- o1.getInitiative())); //сортировка лямбдой
-//        twoCommands.sort(new Comparator<Hero>() {
-//            @Override
-//            public int compare(Hero o1, Hero o2) {
-//                return o2.getInitiative() - o1.getInitiative();
-//            }
-//        });
+
         Scanner scanner = new Scanner(System.in);
         boolean flag;
         while (true){
